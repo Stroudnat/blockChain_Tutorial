@@ -1,0 +1,14 @@
+{
+  "name": "crypto-blockchain-tutorial",
+  "version": "1.0.0",
+  "description": "Youtube tutorial creating block chain",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stroud.nat@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "crypto-js": "^4.1.1"
+  }
+}
