@@ -10,15 +10,18 @@ Block chains in general consist of: data of some kind, an individual hash (long 
 
 1) Fork/ Clone repository to local machine
 2) Install dependencies from the package.json using command: "npm install"
-3) Run file from node to see block chain using command: "node main.js"
-4) un-comment out the last lines to see/change functionality and test the validity of your chain
+3) Run file from node to see block chain using command: "node src/main.js"
 
 # Extra Notes
 
 ## Updates
 
-Originally this project started out as a simple block chain conatining a constructor and methods for block class as well as a constructor and different methods to maintain the chain class. This project currently runs in the terminal for viewing using Node commands. Recently I added proof of work, which is also called mining. Mining makes the computer take a given time (given by the "difficulty") to create these blocks on the chain, so attackers cannot instantly change values of the data or time or placement of any blocks with a simple function within milliseconds. Difficulty delays computers strong computing power. 
+Last update to the simple blockchain I made was the addition of proof of work. Proof of work is security that limits the amount of blocks made at a time so functions cannot add/take awat hundrids or thousands of blocks at a time. Currently this blockchain takes around 7 seconds per block to mine with a difficulty of 5 (lower to take less time). 
 
-## Problems fixed 
+Recently I have added a reward system to the blockchain as well as transactions to handle the reward system and manipulate the "data" section we once had. If a blocl is mined correctly there will be a reward of 100 "coins" or currency and being added to the pending transactions to later be added to the blockchain in order to keep track of spending. 
 
-Without proof of work an attacker can easily write a function within the source code to alter the design/data within a block or chain or even add/delete whole blocks within milliseconds. With more time in between creation of blocks, allows the peer to peer network or a function to create consensus through out copies of the blockchain given out (given to peers) as well as the original that might be getting tampered with. Consensus allows us to track changes any changes that will break the blockchain before the wwhole chain is attacked and repaired. 
+The exammple shown has two transactions with random addresses and usernames that can easily be changed. Running these two transactions take around 14 seconds as mining each block will take around 7 seconds each. Feel free to change the difficulty and add/change transactions in order to see functionality. 
+
+## Future Plans 
+
+No problems fixed, simply added a rewards and transaction system that keeps track and handles of spending. Fixes to be chaned will include: being able to spend coins you dont have among other security features as you are able to endlessly spend currently!
